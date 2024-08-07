@@ -1,0 +1,55 @@
+<div class="login-container">
+    <div class="left-side">
+        <h1>The Professional Network you've been waiting for&#33;</h1>
+    </div>
+    <div class="right-side">
+        <form
+            [formGroup]="registerForm"
+            (ngSubmit)="onSubmit()"
+            class="signup-form"
+        >
+            <h1 class="form-title">Sign up</h1>
+            <div class="username">
+                <label for="username">Email</label>
+                <input
+                    type="text"
+                    id="username"
+                    formControlName="username"
+                    placeholder="you@youremail.com"
+                    required
+                />
+                <div
+                    class="username-errors"
+                    *ngIf="(userName?.invalid && userName?.touched) || userName?.dirty"
+                >
+                    <mat-error *ngIf="userName?.errors?.['email']">Email is invalid</mat-error>
+                    <mat-error *ngIf="userName?.errors?.['required']">Email is required</mat-error>
+                </div>
+            </div>
+            <div class="password">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    formControlName="password"
+                    placeholder="At least 8 characters"
+                    required
+                />
+                <div *ngIf="(password?.invalid && password?.touched) || password?.dirty">
+                    <mat-error *ngIf="password?.errors?.['minlength']"
+                        >Password should be at least 8 characters</mat-error
+                    >
+                    <mat-error *ngIf="password?.errors?.['required']">Password is required</mat-error>
+                </div>
+            </div>
+            <button
+                class="login-btn"
+                type="submit"
+                [disabled]="!registerForm.valid"
+            >
+                Register <mat-icon>arrow_forward</mat-icon>
+            </button>
+            <div class="register-acc">Already have a profile? <a routerLink="/login">Login</a></div>
+        </form>
+    </div>
+</div>

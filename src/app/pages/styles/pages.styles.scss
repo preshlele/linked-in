@@ -1,0 +1,118 @@
+@import '../../../styles.scss';
+
+.login-container {
+    @include flex-center;
+    height: 100%;
+    background-color: $background-color;
+
+    .left-side {
+        flex: 1;
+        height: 100%;
+        @include flex-center;
+
+        h1 {
+            font-family: $font-family;
+            margin: 0 6rem;
+        }
+    }
+
+    .right-side {
+        flex: 1;
+        height: 100%;
+    }
+
+    .signup-form {
+        margin: 5rem;
+        padding: 2rem;
+        border-radius: $border-radius;
+        background-color: #fff;
+        border: 1px solid $primary-color;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        .form-title {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            color: $text-color;
+            text-align: center;
+            font-family: $font-family;
+        }
+
+        label {
+            display: block;
+            margin: 0.5rem 0;
+            color: $text-color;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.75rem 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: $border-radius;
+            transition: border $transition-time;
+
+            &::placeholder {
+                color: $secondary-color;
+            }
+
+            &:focus {
+                border-color: $primary-color;
+                outline: none;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+        }
+        .password {
+            margin-bottom: 2rem;
+        }
+        .username {
+            margin-bottom: 1rem;
+        }
+        mat-error {
+            color: $text-error;
+            font-size: small;
+        }
+        .fgt-pass {
+            text-align: right;
+            color: $secondary-color;
+            margin-bottom: 2rem;
+            font-size: smaller;
+        }
+        .register-acc {
+            text-align: center;
+            color: $secondary-color;
+            font-size: smaller;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: $secondary-color;
+            transition: $secondary-color $transition-time;
+
+            &:hover {
+                color: $text-color;
+                text-decoration: underline;
+            }
+        }
+
+        button {
+            @include primary-button;
+        }
+        .login-btn {
+           @include flex-center;
+            gap: 1rem;
+            border-radius: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .invalid-form {
+            color: red;
+            margin-top: 1rem;
+            text-align: center;
+        }
+        .username-errors {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+<div class="login-container">
+    <div class="left-side">
+        <h1>Connect with the most incredible professionals&#33;</h1>
+    </div>
+    <div class="right-side">
+        <form
+            [formGroup]="loginForm"
+            (ngSubmit)="onSubmit()"
+            class="signup-form"
+        >
+            <h1 class="form-title">Login</h1>
+            <div class="username">
+                <label for="username">Email</label>
+                <input
+                    type="text"
+                    id="username"
+                    formControlName="username"
+                    required
+                />
+                <div
+                    class="username-errors"
+                    *ngIf="(userName?.invalid && userName?.touched) || userName?.dirty"
+                >
+                    <mat-error *ngIf="userName?.errors?.['email']">Email is invalid</mat-error>
+                    <mat-error *ngIf="userName?.errors?.['required']">Email is required</mat-error>
+                </div>
+            </div>
+            <div class="password">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    formControlName="password"
+                    required
+                />
+            </div>
+            <div class="fgt-pass">
+                <a routerLink="/forgot-password"> Forgot Password?</a>
+            </div>
+            <button
+                class="login-btn"
+                type="submit"
+                [disabled]="!loginForm.valid"
+            >
+                Login <mat-icon>arrow_forward</mat-icon>
+            </button>
+            <div class="register-acc">Don&#39;t have an account? <a routerLink="/register">Register</a></div>
+        </form>
+    </div>
+</div>
