@@ -1,1 +1,53 @@
-<p>login-page works!</p>
+<div class="login-container">
+    <div class="left-side">
+        <h1>Connect with the most incredible professionals!</h1>
+    </div>
+    <div class="right-side">
+        <form
+            [formGroup]="loginForm"
+            (ngSubmit)="onSubmit()"
+            class="signup-form"
+        >
+            <h1 class="form-title">Login</h1>
+            <div class="username">
+                <label for="username">Email</label>
+                <input
+                    type="text"
+                    id="username"
+                    formControlName="username"
+                    required
+                />
+                <div
+                    class="username-errors"
+                    *ngIf="
+                        (loginForm.controls['username'].invalid && loginForm.controls.username.touched) ||
+                        loginForm.controls.username.dirty
+                    "
+                >
+                    <mat-error *ngIf="loginForm.controls.username.errors?.['email']">Email is invalid</mat-error>
+                    <mat-error *ngIf="loginForm.controls.username.errors?.['required']">Email is required</mat-error>
+                </div>
+            </div>
+            <div class="password">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    formControlName="password"
+                    required
+                />
+            </div>
+            <div class="fgt-pass">
+                <a routerLink="/forgot-password"> Forgot Password?</a>
+            </div>
+            <button
+                class="login-btn"
+                type="submit"
+                [disabled]="!loginForm.valid"
+            >
+                Login <mat-icon>arrow_forward</mat-icon>
+            </button>
+            <div class="register-acc">Don't have an account? <a routerLink="/register">Register</a></div>
+        </form>
+    </div>
+</div>

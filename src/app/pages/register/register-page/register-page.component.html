@@ -1,0 +1,66 @@
+<div class="login-container">
+    <div class="left-side">
+        <h1>The Professional Network you've been waiting for!</h1>
+    </div>
+    <div class="right-side">
+        <form
+            [formGroup]="registerForm"
+            (ngSubmit)="onSubmit()"
+            class="signup-form"
+        >
+            <h1 class="form-title">Sign up</h1>
+            <div class="username">
+                <label for="username">Email</label>
+                <input
+                    type="text"
+                    id="username"
+                    formControlName="username"
+                    placeholder="you@youremail.com"
+                    required
+                />
+                <div class="username-errors"
+                    *ngIf="
+                        (registerForm.controls['username'].invalid && registerForm.controls['username'].touched) ||
+                        registerForm.controls['username'].dirty
+                    "
+                >
+                    <mat-error *ngIf="registerForm.controls['username'].errors?.['email']">Email is invalid</mat-error>
+                    <mat-error *ngIf="registerForm.controls['username'].errors?.['required']"
+                        >Email is required</mat-error
+                    >
+                </div>
+            </div>
+            <div class="password">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    formControlName="password"
+                    placeholder="At least 8 characters"
+                    required
+                />
+                <div
+                    *ngIf="
+                        (registerForm.controls['password'].invalid && registerForm.controls['password'].touched) ||
+                        registerForm.controls['password'].dirty
+                    "
+                >
+                    <mat-error *ngIf="registerForm.controls['password'].errors?.['minlength']"
+                        >Password should be at least 8 characters</mat-error
+                    >
+                    <mat-error *ngIf="registerForm.controls['password'].errors?.['required']"
+                        >Password is required</mat-error
+                    >
+                </div>
+            </div>
+            <button
+                class="login-btn"
+                type="submit"
+                [disabled]="!registerForm.valid"
+            >
+                Register <mat-icon>arrow_forward</mat-icon>
+            </button>
+            <div class="register-acc">Already have a profile? <a routerLink="/login">Login</a></div>
+        </form>
+    </div>
+</div>
