@@ -1,6 +1,6 @@
 <div class="login-container">
     <div class="left-side">
-        <h1>The Professional Network you've been waiting for!</h1>
+        <h1>The Professional Network you've been waiting for&#33;</h1>
     </div>
     <div class="right-side">
         <form
@@ -18,16 +18,12 @@
                     placeholder="you@youremail.com"
                     required
                 />
-                <div class="username-errors"
-                    *ngIf="
-                        (registerForm.controls['username'].invalid && registerForm.controls['username'].touched) ||
-                        registerForm.controls['username'].dirty
-                    "
+                <div
+                    class="username-errors"
+                    *ngIf="(userName?.invalid && userName?.touched) || userName?.dirty"
                 >
-                    <mat-error *ngIf="registerForm.controls['username'].errors?.['email']">Email is invalid</mat-error>
-                    <mat-error *ngIf="registerForm.controls['username'].errors?.['required']"
-                        >Email is required</mat-error
-                    >
+                    <mat-error *ngIf="userName?.errors?.['email']">Email is invalid</mat-error>
+                    <mat-error *ngIf="userName?.errors?.['required']">Email is required</mat-error>
                 </div>
             </div>
             <div class="password">
@@ -39,18 +35,11 @@
                     placeholder="At least 8 characters"
                     required
                 />
-                <div
-                    *ngIf="
-                        (registerForm.controls['password'].invalid && registerForm.controls['password'].touched) ||
-                        registerForm.controls['password'].dirty
-                    "
-                >
-                    <mat-error *ngIf="registerForm.controls['password'].errors?.['minlength']"
+                <div *ngIf="(password?.invalid && password?.touched) || password?.dirty">
+                    <mat-error *ngIf="password?.errors?.['minlength']"
                         >Password should be at least 8 characters</mat-error
                     >
-                    <mat-error *ngIf="registerForm.controls['password'].errors?.['required']"
-                        >Password is required</mat-error
-                    >
+                    <mat-error *ngIf="password?.errors?.['required']">Password is required</mat-error>
                 </div>
             </div>
             <button

@@ -3,7 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 @Component({
     selector: 'app-login-page',
     templateUrl: './login-page.component.html',
-    styleUrl: './login-page.component.scss',
+    styleUrl: '../styles/pages.styles.scss',
 })
 export class LoginPageComponent {
     constructor() {}
@@ -14,6 +14,14 @@ export class LoginPageComponent {
     });
 
     onSubmit(): void {
-        console.log(this.loginForm.value, 'login values');
+        // console.log(this.loginForm.value, 'login values');
+    }
+
+    get userName() {
+        return this.loginForm.get('username');
+    }
+
+    get password() {    
+        return this.loginForm.get('password');
     }
 }

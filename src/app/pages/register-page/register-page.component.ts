@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { emailValidator } from '../../../utils/emailValidator';
+import { emailValidator } from '../../utils/emailValidator';
 
 @Component({
     selector: 'app-register-page',
     templateUrl: './register-page.component.html',
-    styleUrl: './register-page.component.scss',
+    styleUrl: '../styles/pages.styles.scss',
 })
 export class RegisterPageComponent {
-  constructor() {}
+    constructor() {}
 
     registerForm = new FormGroup({
         username: new FormControl('', [Validators.required, emailValidator()]),
@@ -16,8 +16,15 @@ export class RegisterPageComponent {
     });
 
     onSubmit(): void {
-        console.log(this.registerForm.value)
-        this.registerForm.reset()
+        // console.log(this.registerForm.value)
+        this.registerForm.reset();
     }
 
-  }
+    get userName() {
+        return this.registerForm.get('username');
+    }
+
+    get password() {
+        return this.registerForm.get('password');
+    }
+}

@@ -1,6 +1,6 @@
 <div class="login-container">
     <div class="left-side">
-        <h1>Connect with the most incredible professionals!</h1>
+        <h1>Connect with the most incredible professionals&#33;</h1>
     </div>
     <div class="right-side">
         <form
@@ -19,13 +19,10 @@
                 />
                 <div
                     class="username-errors"
-                    *ngIf="
-                        (loginForm.controls['username'].invalid && loginForm.controls.username.touched) ||
-                        loginForm.controls.username.dirty
-                    "
+                    *ngIf="(userName?.invalid && userName?.touched) || userName?.dirty"
                 >
-                    <mat-error *ngIf="loginForm.controls.username.errors?.['email']">Email is invalid</mat-error>
-                    <mat-error *ngIf="loginForm.controls.username.errors?.['required']">Email is required</mat-error>
+                    <mat-error *ngIf="userName?.errors?.['email']">Email is invalid</mat-error>
+                    <mat-error *ngIf="userName?.errors?.['required']">Email is required</mat-error>
                 </div>
             </div>
             <div class="password">
@@ -47,7 +44,7 @@
             >
                 Login <mat-icon>arrow_forward</mat-icon>
             </button>
-            <div class="register-acc">Don't have an account? <a routerLink="/register">Register</a></div>
+            <div class="register-acc">Don&#39;t have an account? <a routerLink="/register">Register</a></div>
         </form>
     </div>
 </div>
