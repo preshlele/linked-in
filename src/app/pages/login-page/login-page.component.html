@@ -10,19 +10,19 @@
         >
             <h1 class="form-title">Login</h1>
             <div class="username">
-                <label for="username">Email</label>
+                <label for="email">Email</label>
                 <input
                     type="text"
-                    id="username"
-                    formControlName="username"
+                    id="email"
+                    formControlName="email"
                     required
                 />
                 <div
                     class="username-errors"
-                    *ngIf="(userName?.invalid && userName?.touched) || userName?.dirty"
+                    *ngIf="(email?.invalid && email?.touched) || email?.dirty"
                 >
-                    <mat-error *ngIf="userName?.errors?.['email']">Email is invalid</mat-error>
-                    <mat-error *ngIf="userName?.errors?.['required']">Email is required</mat-error>
+                    <mat-error *ngIf="email?.errors?.['email']">Email is invalid</mat-error>
+                    <mat-error *ngIf="email?.errors?.['required']">Email is required</mat-error>
                 </div>
             </div>
             <div class="password">

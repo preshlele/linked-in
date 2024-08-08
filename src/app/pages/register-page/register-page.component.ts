@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { emailValidator } from '../../utils/emailValidator';
+import { AuthService } from '../../features/auth/auth-service.service';
+import { Router } from '@angular/router';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
     selector: 'app-register-page',
@@ -8,20 +11,41 @@ import { emailValidator } from '../../utils/emailValidator';
     styleUrl: '../styles/pages.styles.scss',
 })
 export class RegisterPageComponent {
-    constructor() {}
+    constructor(
+        private authService: AuthService,
+        private router: Router,
+        private fb: FormBuilder,
+    ) {}
 
-    registerForm = new FormGroup({
-        username: new FormControl('', [Validators.required, emailValidator()]),
-        password: new FormControl('', [Validators.required, Validators.minLength(8)]),
+    registerForm = this.fb.group({
+        email: ['', [Validators.required, emailValidator()]],
+        first_name: ['John', Validators.required],
+        last_name: ['Doe', Validators.required],
+        password: ['', [Validators.required, Validators.minLength(8)]],
     });
 
     onSubmit(): void {
-        // console.log(this.registerForm.value)
-        this.registerForm.reset();
+        if (this.registerForm.valid) {
+            this.authService.signup(this.registerForm.value).subscribe({
+                next: (data) => {
+                  console.log(data.message);
+                    this.router.navigate(['/login']);
+                },
+                error: (err: HttpErrorResponse) => {
+                    if (err.status === 400) {
+                        console.log('bad request');
+                    } else if (err.status === 500) {
+                        console.log('server error');
+                    } else if (err.status === 401) {
+                        console.log('unauthorized');
+                    }
+                },
+                // complete: () => console.log('User Registered Successfully'),
+            });
+        }
     }
-
-    get userName() {
-        return this.registerForm.get('username');
+    get email() {
+        return this.registerForm.get('email');
     }
 
     get password() {
