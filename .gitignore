@@ -42,5 +42,5 @@ testem.log
 Thumbs.db
 
 # Environment viarables
-environment.ts 
-environment.development.ts
+/environments/environment.ts 
+/environments/environment.development.ts

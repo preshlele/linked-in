@@ -1,9 +1,11 @@
 import { inject, Injectable } from '@angular/core';
-import { environment } from '../../../environments/environment';
+import { environment } from '../../../../environments/environment';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { LoginData, LoginDataResponse, RegisterData, RegisterDataResponse } from '../../interfaces/model';
 import { Observable } from 'rxjs';
 
+type partialRegisterData = Partial<RegisterData>;
+type partialLoginData = Partial<LoginData>;
 @Injectable({
     providedIn: 'root',
 })
@@ -13,12 +15,12 @@ export class AuthService {
 
     constructor(private http: HttpClient) {}
 
-    signup(formData: any): Observable<any> {
+    signup(formData: partialRegisterData): Observable<RegisterDataResponse> {
         const data: RegisterData = {
-            email: formData.email,
-            first_name: formData.first_name,
-            last_name: formData.last_name,
-            password: formData.password,
+            email: formData.email!,
+            first_name: formData.first_name!,
+            last_name: formData.last_name!,
+            password: formData.password!,
         };
         const headers = new HttpHeaders({
             'X-APN': this.apiKey,
@@ -28,10 +30,10 @@ export class AuthService {
         return this.http.post<RegisterDataResponse>(`${this.apiUrl}user/signup`, data, { headers });
     }
 
-    login(formData: any): Observable<any> {
+    login(formData: partialLoginData): Observable<LoginDataResponse> {
         const data: LoginData = {
-            email: formData.email,
-            password: formData.password,
+            email: formData.email!,
+            password: formData.password!,
         };
         const headers = new HttpHeaders({
             'X-APN': this.apiKey,

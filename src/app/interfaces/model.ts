@@ -1,24 +1,24 @@
 export interface RegisterData {
-    email: string;
-    first_name: string;
-    last_name: string;
-    password: string;
+    email: string | null;
+    first_name: string | null;
+    last_name: string | null;
+    password: string | null;
 }
 
 export interface LoginData {
-    email: string;
-    password: string;
+    email: string | null;
+    password: string | null;
 }
 
-export interface RegisterDataResponse{
+export interface RegisterDataResponse {
     message: string;
 }
 
-export interface LoginDataResponse{
+export interface LoginDataResponse {
     login_token: string;
     message: string;
 }
 
-export interface ValidateUserResponse{
+export interface ValidateUserResponse {
     message: string;
 }
