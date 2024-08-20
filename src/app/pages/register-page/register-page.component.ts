@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, DestroyRef, inject } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { emailValidator } from '../../utils/emailValidator';
 import { AuthService } from '../../features/auth/auth-service.service';
 import { Router } from '@angular/router';
 import { HttpErrorResponse } from '@angular/common/http';
+import { NgToastService } from 'ng-angular-popup';
+import { take } from 'rxjs';
 
 @Component({
     selector: 'app-register-page',
@@ -11,6 +13,8 @@ import { HttpErrorResponse } from '@angular/common/http';
     styleUrl: '../styles/pages.styles.scss',
 })
 export class RegisterPageComponent {
+    private _toast = inject(NgToastService);
+    destroyRef = inject(DestroyRef);
     constructor(
         private authService: AuthService,
         private router: Router,
@@ -26,21 +30,20 @@ export class RegisterPageComponent {
 
     onSubmit(): void {
         if (this.registerForm.valid) {
-            this.authService.signup(this.registerForm.value).subscribe({
+            this.authService.signup(this.registerForm.value).pipe(take(1)).subscribe({
                 next: (data) => {
-                  console.log(data.message);
+                    this._toast.success(data.message, 'SUCCESS', 5000);
                     this.router.navigate(['/login']);
                 },
                 error: (err: HttpErrorResponse) => {
                     if (err.status === 400) {
-                        console.log('bad request');
+                        this._toast.danger('bad request');
                     } else if (err.status === 500) {
-                        console.log('server error');
+                        this._toast.danger('server error');
                     } else if (err.status === 401) {
-                        console.log('unauthorized');
+                        this._toast.danger('unauthorized');
                     }
                 },
-                // complete: () => console.log('User Registered Successfully'),
             });
         }
     }

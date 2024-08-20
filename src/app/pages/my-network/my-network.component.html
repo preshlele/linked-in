@@ -1,0 +1,20 @@
+<button
+    class="back-btn"
+    (click)="navigateBack()"
+    matTooltip="Go back"
+>
+    <mat-icon>arrow_back_ios</mat-icon>
+</button>
+<div class="profile-grid">
+    <div
+        *ngFor="let data of datas"
+        class="profile-card"
+    >
+        <h2 class="profile-name">{{ data.name }}</h2>
+        <p class="profile-tagline">{{ data.tagline }}</p>
+        <div class="profile-followers">
+            <span class="follower-count">{{ data.followers }}</span>
+            <span class="follower-label">Followers</span>
+        </div>
+    </div>
+</div>

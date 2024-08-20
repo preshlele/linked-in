@@ -1,0 +1,61 @@
+<button
+            class="back-btn"
+            (click)="navigateBack()"
+            matTooltip="Go back"
+        >
+            <mat-icon>arrow_back_ios</mat-icon>
+        </button>
+<div
+    *ngFor="let profile of mockProfileData"
+    class="profile-page"
+>
+    <div class="profile-header">
+        <img
+            [src]="profile.profilePicture || profilePic"
+            alt="Profile"
+            class="profile-pic"
+        />
+        <h1>{{ profile.firstName }} {{ profile.lastName }}</h1>
+        <h2>{{ profile.headline }}</h2>
+        <p>{{ profile.geo.full }}</p>
+    </div>
+
+    <div class="profile-summary">
+        <h3>Summary</h3>
+        <p>{{ profile.summary }}</p>
+    </div>
+
+    <div class="profile-education">
+        <h3>Education</h3>
+        <div
+            *ngFor="let edu of profile.educations"
+            class="education-item"
+        >
+            <h4>{{ edu.schoolName }}</h4>
+            <p>{{ edu.degree }} in {{ edu.fieldOfStudy }}</p>
+            <p>{{ edu.start.year }} - {{ edu.end.year }}</p>
+            <p>{{ edu.description }}</p>
+        </div>
+    </div>
+
+    <div class="profile-position">
+        <h3>Experience</h3>
+        <div
+            *ngFor="let pos of profile.position"
+            class="position-item"
+        >
+            <h4>{{ pos.title }} at {{ pos.companyName }}</h4>
+            <p>{{ pos.start.year }} - {{ pos.end.year }}</p>
+            <p >{{ pos.description }}</p>
+        </div>
+    </div>
+
+    <div class="profile-skills">
+        <h3>Skills</h3>
+        <ul>
+            <li *ngFor="let skill of profile.skills">
+                {{ skill.name }} <span *ngIf="skill.passedSkillAssessment">✔️</span>
+            </li>
+        </ul>
+    </div>
+</div>
