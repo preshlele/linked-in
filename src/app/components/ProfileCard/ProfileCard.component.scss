@@ -1,0 +1,37 @@
+@import '../../../styles.scss';
+.profile-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 180px;
+    margin: 0 auto;
+    border-radius: 6px;
+    background-color: #fff;
+    position: fixed;
+
+    .profile-picture {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+
+    .profile-name {
+        font-weight: 400;
+        margin: 0 0 10px;
+    }
+
+    .profile-country {
+        font-size: 12px;
+        margin: 0 0 10px;
+        color: #848884;
+    }
+
+    .profile-headline {
+        font-size: 0.75rem;
+        line-height: 1.4;
+        color: #848884;
+        margin: 0;
+    }
+}

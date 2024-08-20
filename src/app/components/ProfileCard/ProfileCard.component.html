@@ -1,0 +1,13 @@
+<div
+    *ngFor="let item of profileData"
+    class="profile-card"
+>
+    <img
+        [src]="imageUrl|| item.profilePicture"
+        alt="profile"
+        class="profile-picture"
+    />
+    <h2 class="profile-name">{{item.firstName }} {{ item.lastName }}</h2>
+    <p class="profile-country">{{ item.geo.full }}</p>
+    <p class="profile-headline">{{ item.summary}}</p>
+</div>
