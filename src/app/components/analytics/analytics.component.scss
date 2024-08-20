@@ -1,0 +1,69 @@
+@import '../../../styles.scss';
+
+.highlights-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+
+    .highlight-item {
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        text-align: center;
+        background-color: #fff;
+
+        .item-name {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: $font-family;
+            margin-bottom: 5px;
+        }
+
+        .item-tagline {
+            font-size: 14px;
+            color: $text-gray;
+            margin-bottom: 10px;
+        }
+
+        .follow-button {
+            background-color: $primary-color;
+            color: #ffffff;
+            border: none;
+            border-radius: 16px;
+            padding: 8px 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #005f8b;
+            }
+        }
+    }
+}
+
+p{
+  text-align: center;
+  font-weight: bold;
+}
+
+.view-all {
+  font-size: 14px;
+  color: $text-gray;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 10px;
+
+  a{
+    text-decoration: none;
+    color: $text-gray;
+    font-size: 12px;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

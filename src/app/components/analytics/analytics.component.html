@@ -1,0 +1,14 @@
+<div class="highlights-container">
+    <p>Recommendations For You</p>
+    <div
+        *ngFor="let item of items"
+        class="highlight-item"
+    >
+        <span class="item-name">{{ item.name }}</span>
+        <div class="item-tagline">{{ item.tagline }}</div>
+        <button class="follow-button">Follow</button>
+    </div>
+    <div class="view-all">
+        <a routerLink="/my-network">View all Recommendations</a><mat-icon>arrow_forward</mat-icon>
+    </div>
+</div>
