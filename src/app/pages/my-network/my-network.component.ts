@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
-import { Recommendation } from '../../interfaces/model';
-import { NetworkService } from '../../features/@common/Services/Network/network.service';
 import { Location } from '@angular/common';
+import { SimilarProfile } from '../../interfaces/profile.model';
+import { FeedService } from '../../features/@common/Services/Feed/feed.service';
 
 @Component({
     selector: 'app-my-network',
@@ -10,18 +10,12 @@ import { Location } from '@angular/common';
 })
 export class MyNetworkComponent {
     constructor(private _location: Location) {}
-    networkService = inject(NetworkService);
-    datas: Recommendation[] = [];
+    feedService = inject(FeedService);
+    items: SimilarProfile[] = [];
     ngOnInit(): void {
-      this.datas = this.networkService.allItems();
-        if (this.datas.length > 1) {
-            this.datas = this.networkService.allItems();
-        }
-        else{
-            this.networkService.getRecommendations().subscribe((data) => {
-                this.datas = data;
-            }) 
-        }
+        this.feedService.getSimilarProfile().subscribe((data) => {
+            this.items = data.response;
+        });
     }
 
     navigateBack() {

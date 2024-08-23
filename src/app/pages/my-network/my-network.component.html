@@ -7,14 +7,10 @@
 </button>
 <div class="profile-grid">
     <div
-        *ngFor="let data of datas"
+        *ngFor="let item of items"
         class="profile-card"
     >
-        <h2 class="profile-name">{{ data.name }}</h2>
-        <p class="profile-tagline">{{ data.tagline }}</p>
-        <div class="profile-followers">
-            <span class="follower-count">{{ data.followers }}</span>
-            <span class="follower-label">Followers</span>
-        </div>
+        <h2 class="profile-name">{{ item.titleV2 }}</h2>
+        <p class="profile-tagline">{{ item.subtitle }}</p>
     </div>
 </div>

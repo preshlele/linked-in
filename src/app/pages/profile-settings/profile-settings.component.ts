@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ProfileService } from '../../features/@common/Services/Profile/profile.service';
-import { Profile } from './profile.model';
 import { Location } from '@angular/common';
+import { ProfileData } from '../../interfaces/profile.model';
 
 @Component({
     selector: 'app-profile-settings',
@@ -9,14 +9,16 @@ import { Location } from '@angular/common';
     styleUrl: './profile-settings.component.scss',
 })
 export class ProfileSettingsComponent {
-    constructor(private profileService: ProfileService, private _location: Location) {}
-    profilePic: string = 'https://picsum.photos/id/1025/150/150';
-    mockProfileData: Profile[] = [];
-    profileData: Profile[] = [];
+    constructor(
+        private _profileService: ProfileService,
+        private _location: Location,
+    ) {}
+    mockProfileData: ProfileData = {} as ProfileData;
+    item: ProfileData = {} as ProfileData;
 
-    ngAfterViewInit(): any {
-        this.profileService.getMockUserProfile().subscribe((data) => {
-            this.mockProfileData = data;
+    ngAfterViewInit(): void {
+        this._profileService.getUserProfile().subscribe((data) => {
+            this.item = data.data;
         });
     }
 
