@@ -112,3 +112,9 @@ export interface LinkedInPostResponse {
     data: LinkedInPost[];
 }
 
+export interface PostResponse{
+    success: boolean;
+    status: number;
+    posts: Post [];
+}
+
