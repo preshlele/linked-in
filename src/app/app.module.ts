@@ -23,6 +23,8 @@ import { MyNetworkComponent } from './pages/my-network/my-network.component';
 import { NgToastModule } from 'ng-angular-popup';
 import { refreshInterceptor } from './interceptor/refresh.interceptor';
 import { ProfileSettingsComponent } from './pages/profile-settings/profile-settings.component';
+import { rapidApiInterceptor } from './interceptor/rapid-api.interceptor';
+import { errorInterceptor } from './interceptor/error.interceptor';
 
 @NgModule({
     declarations: [
@@ -39,7 +41,7 @@ import { ProfileSettingsComponent } from './pages/profile-settings/profile-setti
         ProfileSettingsComponent,
     ],
     imports: [BrowserModule, AppRoutingModule, MatIconModule, MatCardModule, ReactiveFormsModule, MatFormFieldModule, MatIconModule, NgToastModule],
-    providers: [provideAnimationsAsync(), provideHttpClient(withInterceptors([authInterceptor, refreshInterceptor]))],
+    providers: [provideAnimationsAsync(), provideHttpClient(withInterceptors([authInterceptor, rapidApiInterceptor, refreshInterceptor, errorInterceptor]))],
     bootstrap: [AppComponent],
 })
 export class AppModule {}
