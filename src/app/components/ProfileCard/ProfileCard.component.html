@@ -1,13 +1,13 @@
 <div
-    *ngFor="let item of profileData"
+    *ngIf="items"
     class="profile-card"
 >
     <img
-        [src]="imageUrl|| item.profilePicture"
+        [src]="items.profilePic"
         alt="profile"
         class="profile-picture"
     />
-    <h2 class="profile-name">{{item.firstName }} {{ item.lastName }}</h2>
-    <p class="profile-country">{{ item.geo.full }}</p>
-    <p class="profile-headline">{{ item.summary}}</p>
+    <h2 class="profile-name">{{ items.fullName }}</h2>
+    <p class="profile-country">{{items.addressWithCountry }}</p>
+    <p class="profile-headline">{{ items.headline }}</p>
 </div>

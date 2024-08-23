@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileService } from '../../features/@common/Services/Profile/profile.service';
 import { Profile } from '../../pages/profile-settings/profile.model';
+import { environment } from '../../../../environments/environment';
+import { ProfileData } from '../../interfaces/profile.model';
 
 @Component({
     selector: 'app-profile',
@@ -9,12 +11,12 @@ import { Profile } from '../../pages/profile-settings/profile.model';
 })
 export class ProfileCardComponent implements OnInit {
     constructor(private profileService: ProfileService) {}
-    imageUrl: string = 'https://picsum.photos/id/1025/150/150';
-    profileData: Profile[] = [];
+    imageUrl: string = environment.imageUrl;
+    items: ProfileData ={} as ProfileData;
 
     ngOnInit(): void {
-        this.profileService.getMockUserProfile().subscribe((data) => {
-            this.profileData = data;
+        this.profileService.getUserProfile().subscribe((data) => {
+            this.items = data.data;
         });
     }
 }
