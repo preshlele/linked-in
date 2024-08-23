@@ -1,7 +1,9 @@
-import { Component, DestroyRef, inject, signal } from '@angular/core';
-import { Recommendation } from '../../interfaces/model';
-import { NetworkService } from '../../features/@common/Services/Network/network.service';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { Component, DestroyRef, inject } from '@angular/core';
+
+import { SimilarProfile } from '../../interfaces/profile.model';
+import { delay, of, switchMap } from 'rxjs';
+import { ProfileService } from '../../features/@common/Services/Profile/profile.service';
+import { FeedService } from '../../features/@common/Services/Feed/feed.service';
 
 @Component({
     selector: 'app-analytics',
@@ -10,24 +12,24 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 })
 export class AnalyticsComponent {
     destroyRef = inject(DestroyRef);
-    items: Recommendation[] = [];
+    items: SimilarProfile[] = [];
 
-    constructor(private networkService: NetworkService) {}
+    constructor(private feedService: FeedService) {}
 
     ngOnInit(): void {
-        this.networkService
-            .getRecommendations()
+        of(1)
+            .pipe(
+                delay(3000),
+                switchMap(() => this.feedService.getSimilarProfile()),
+            )
             .subscribe({
                 next: (data) => {
-                    this.items = this.getRandom(data);
-                },
-                error: (err) => {
-                    console.log(err);
+                    this.items = this.getRandom(data.response);
                 },
             });
     }
-    getRandom(arr: Recommendation[]) {
+    getRandom(arr: SimilarProfile[]) {
         const shuffled = arr.sort(() => 0.5 - Math.random());
-        return shuffled.slice(0, 4);
+        return shuffled.slice(0, 3);
     }
 }
