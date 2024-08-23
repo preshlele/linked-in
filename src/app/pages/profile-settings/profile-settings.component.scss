@@ -11,13 +11,12 @@
         text-align: center;
 
         .profile-pic {
-            // border-radius: 80%;
             position: relative;
             z-index: 100;
             padding: 3rem;
             width: 150px;
             height: 150px;
-            border: 1px solid gray;
+            border-radius: 100%;
         }
     }
 
@@ -35,7 +34,6 @@
     .education-item,
     .position-item {
         margin-bottom: 12px;
-        // border: 1px red solid;
     }
 
     .profile-skills ul {
