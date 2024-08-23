@@ -1,31 +1,28 @@
 <div class="feed-container">
     <div
-        *ngFor="let post of mockPosts"
+        *ngFor="let post of posts"
         class="post-card"
     >
         <div class="header">
-            <div class="name">{{ post.author.firstName }} {{ post.author.lastName }}</div>
-            <div class="username"><span>&#64;</span>{{ post.author.username }} {{ post.postedAt }}</div>
+            <div class="name">{{ post.actor.actorName }}</div>
+            <div class="username">{{post.actor.actorDescription}}</div>
+            <div class="username"><span>&#64;</span> {{ post.postedAgo }}</div>
         </div>
         <div class="content">
-            {{ post.text }}
+            {{ post.postText }}
         </div>
         <div class="actions">
             <button>
                 <mat-icon>thumb_up</mat-icon>
-                {{ formatLikes(post.likeCount) }}
+                {{ post.socialCount.numLikes }}
             </button>
             <button>
                 <mat-icon>comment</mat-icon>
-                {{ post.commentsCount }}
+                {{ post.socialCount.numComments }}
             </button>
             <button>
-                <mat-icon>repeat</mat-icon>
-                {{ post.repostsCount }}
-            </button>
-            <button>
-                <mat-icon>emoji_emotions</mat-icon>
-                {{ post?.funnyCount ?? 0 }}
+                <mat-icon>share</mat-icon>
+                {{ post.socialCount.numShares }}
             </button>
         </div>
     </div>
