@@ -1,40 +1,23 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from '../../../../../../environments/environment';
-import { BehaviorSubject, Observable } from 'rxjs';
-import { Profile } from '../../../../pages/profile-settings/profile.model';
+import { Observable } from 'rxjs';
+import { ProfileDataResponse } from '../../../../interfaces/profile.model';
 
 @Injectable({
     providedIn: 'root',
 })
 export class ProfileService {
     constructor(private http: HttpClient) {}
-    private apiKey: string = environment.rapidApiKey;
-    private mockServerApi: string = environment.serverApi;
-    private serverApi: string = environment.rapidApi;
-    private profileSubject = new BehaviorSubject<Profile[]>([]);
-    public profile$ = this.profileSubject.asObservable();
+    private mockServerApi: string = environment.mockServerApi;
+    private _rapidApi: string = environment.rapidApiUrl;
 
-    getUserProfile(): Observable<Profile[]> {
-        const headers = new HttpHeaders({
-            'x-rapidapi-key': this.apiKey,
-            'x-rapidapi-host': 'linkedin-data-api.p.rapidapi.com/pop',
-            'Content-Type': 'application/json',
-        });
-        return this.http.get<Profile[]>(`${this.serverApi}?username=adamselipsky`, {
-            headers,
-        });
+    getUserProfile(): Observable<ProfileDataResponse> {
+        const body = { link: environment.base_link };
+        return this.http.post<ProfileDataResponse>(`${this._rapidApi}/person`, body);
     }
 
-    getMockUserProfile(): Observable<Profile[]> {
-        return this.http.get<Profile[]>(`${this.mockServerApi}/profile`);
-    }
-
-    setProfileData(data: Profile[]) {
-        this.profileSubject.next(data);
-    }
-
-    getProfileData(): Observable<Profile[]> {
-        return this.profile$;
+    getMockUserProfile(): Observable<ProfileDataResponse> {
+        return this.http.get<ProfileDataResponse>(`${this.mockServerApi}/profile`);
     }
 }
