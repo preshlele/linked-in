@@ -162,7 +162,7 @@
       }
     }
   ],
-   "companies": [
+  "companies": [
     {
       "name": "Tech Innovators Inc.",
       "tagline": "Pioneering the Future of Technology",
@@ -189,474 +189,841 @@
       "followers": 12000
     }
   ],
-  "persons": [
+  "response": [
     {
-      "name": "John Doe",
-      "tagline": "Passionate Software Developer",
-      "followers": 5000
+      "firstName": "Leon",
+      "lastName": "Hergert",
+      "publicIdentifier": "leonhergert",
+      "creator": true,
+      "profilePictures": [
+        {
+          "width": 100,
+          "height": 100,
+          "url": "https://media.licdn.com/dms/image/v2/D4E03AQFjQf3NNeo7eA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1684404804288?e=1729728000&v=beta&t=0PLSpW1sHmtFWTMnx85TJMIP8a0_-FJDWK9XR9UDadQ"
+        },
+        {
+          "width": 200,
+          "height": 200,
+          "url": "https://media.licdn.com/dms/image/v2/D4E03AQFjQf3NNeo7eA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1684404804288?e=1729728000&v=beta&t=0M9qUEiiT0MwlpRiomSITSglPsrHL7hDc1HQVl2SOSY"
+        },
+        {
+          "width": 400,
+          "height": 400,
+          "url": "https://media.licdn.com/dms/image/v2/D4E03AQFjQf3NNeo7eA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1684404804288?e=1729728000&v=beta&t=m_DFq_8AD11WTlNwYEaCz7fRhv1_7tjB_vqkfGMOFTc"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "url": "https://media.licdn.com/dms/image/v2/D4E03AQFjQf3NNeo7eA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1684404804288?e=1729728000&v=beta&t=iTj-CHqQAgAYomrogoXo6SujGx-2dZrWKbTaTfQoNH8"
+        }
+      ],
+      "titleV2": "Leon Hergert",
+      "textActionTarget": "https://www.linkedin.com/in/leonhergert?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACQU95sBouWrLIqUh0QAEq3CerpZL-IooYQ",
+      "subtitle": "Co-Founder @ Spherecast (YC S24) – Inventory Copilot for E-Com Brands",
+      "subtitleV2": "Co-Founder @ Spherecast (YC S24) – Inventory Copilot for E-Com Brands"
     },
     {
-      "name": "Jane Smith",
-      "tagline": "Expert in Digital Marketing",
-      "followers": 8000
+      "firstName": "Matiss",
+      "lastName": "Brunavs",
+      "publicIdentifier": "matiss-brunavs",
+      "profilePictures": [
+        {
+          "width": 100,
+          "height": 100,
+          "url": "https://media.licdn.com/dms/image/v2/D4D03AQEjMw-vnmaf4Q/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1685543926323?e=1729728000&v=beta&t=oOp39URFTBslQF4ifTxGJ90cAGk3NmJn68jc7h5hk0s"
+        },
+        {
+          "width": 200,
+          "height": 200,
+          "url": "https://media.licdn.com/dms/image/v2/D4D03AQEjMw-vnmaf4Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1685543926323?e=1729728000&v=beta&t=nInzL8V6zmYAy_N9HkxPAmm_cDRFewOFhyHo3Kvi62E"
+        },
+        {
+          "width": 400,
+          "height": 400,
+          "url": "https://media.licdn.com/dms/image/v2/D4D03AQEjMw-vnmaf4Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1685543926323?e=1729728000&v=beta&t=6tHaFF4mQcNmXqN4xSIL9hTP04alD135jM1VUoy_jD0"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "url": "https://media.licdn.com/dms/image/v2/D4D03AQEjMw-vnmaf4Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1685543926323?e=1729728000&v=beta&t=MvRFqjwWaJPz6Fcp60ycWR7WeZOuqTzJgcOUdr3CXEk"
+        }
+      ],
+      "titleV2": "Matiss Brunavs",
+      "textActionTarget": "https://www.linkedin.com/in/matiss-brunavs?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAOvkkABEgWl81WFrkQsGUChnzKG2NsP8w0",
+      "subtitle": "Founder & CEO at Squad Robotics",
+      "subtitleV2": "Founder & CEO at Squad Robotics"
     },
     {
-      "name": "Michael Brown",
-      "tagline": "Innovative Data Scientist",
-      "followers": 6700
+      "firstName": "Oliver",
+      "lastName": "Visintin",
+      "publicIdentifier": "oliver-visintin",
+      "profilePictures": [
+        {
+          "width": 100,
+          "height": 100,
+          "url": "https://media.licdn.com/dms/image/v2/D4E03AQFSgOjlNpMrOA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1713261126346?e=1729728000&v=beta&t=AeggesdhnSPmFMN3EsljfrJvn7X3_5tSgJAjypcutt4"
+        },
+        {
+          "width": 200,
+          "height": 200,
+          "url": "https://media.licdn.com/dms/image/v2/D4E03AQFSgOjlNpMrOA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1713261126346?e=1729728000&v=beta&t=5VORVtdrkXTUa9Layq8leNNh44PYLzgN87OErlKMCsw"
+        },
+        {
+          "width": 400,
+          "height": 400,
+          "url": "https://media.licdn.com/dms/image/v2/D4E03AQFSgOjlNpMrOA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1713261126346?e=1729728000&v=beta&t=rPAetd3KDoMPgEBqLLbQ9v58yRW0Gx8cWxb0GOL8z2Y"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "url": "https://media.licdn.com/dms/image/v2/D4E03AQFSgOjlNpMrOA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1713261126346?e=1729728000&v=beta&t=3zeyMnKmA-q5-4jyX-x4DXlAf-vW_x3_YaKbhiJm-ms"
+        }
+      ],
+      "titleV2": "Oliver Visintin",
+      "textActionTarget": "https://www.linkedin.com/in/oliver-visintin?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADqCitoByCByggrnJdCkiTBE9AoEeQaMACc",
+      "subtitle": "Founder's Associate at Huzzle | Co-President of the Economics Society | BCG Future Leader",
+      "subtitleV2": "Founder's Associate at Huzzle | Co-President of the Economics Society | BCG Future Leader"
     },
     {
-      "name": "Emily Johnson",
-      "tagline": "Creative UX/UI Designer",
-      "followers": 4500
+      "firstName": "Georgia",
+      "lastName": "Gibson",
+      "publicIdentifier": "georgia-gibson-a89b57163",
+      "creator": true,
+      "profilePictures": [
+        {
+          "width": 100,
+          "height": 100,
+          "url": "https://media.licdn.com/dms/image/v2/D4E03AQGlyN4hUgEkcA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1714570715948?e=1729728000&v=beta&t=rr7Kt1ON75cs0DcMa7jaL5_a2tgJ1_41hMjKOM5dRWI"
+        },
+        {
+          "width": 200,
+          "height": 200,
+          "url": "https://media.licdn.com/dms/image/v2/D4E03AQGlyN4hUgEkcA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1714570715948?e=1729728000&v=beta&t=YymJ0oJaM3b9pnouGSG69Ztx0Q30J1BnaSQacSBzHRw"
+        },
+        {
+          "width": 400,
+          "height": 400,
+          "url": "https://media.licdn.com/dms/image/v2/D4E03AQGlyN4hUgEkcA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1714570715948?e=1729728000&v=beta&t=9e1K5FLKL1VhbQbp4h5sk3wK3mvXhzNhuxZVonKR0Ek"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "url": "https://media.licdn.com/dms/image/v2/D4E03AQGlyN4hUgEkcA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1714570715948?e=1729728000&v=beta&t=0SkE_0Jvwufg1Odj0SLMxnOL1Eh3n0oqGPQb9EaSy6U"
+        }
+      ],
+      "titleV2": "Georgia Gibson",
+      "textActionTarget": "https://www.linkedin.com/in/georgia-gibson-a89b57163?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACclvkkBC1Emm18Ey-tpJXkJS6ZqhSSDzxY",
+      "subtitle": "Building a new way to connect IRL | Co-Founder @ Youni | Sigma² | Award-Winning Creative Director + Community Builder | H&G 25 Rising Star Creative Talents",
+      "subtitleV2": "Building a new way to connect IRL | Co-Founder @ Youni | Sigma² | Award-Winning Creative Director + Community Builder | H&G 25 Rising Star Creative Talents"
     },
     {
-      "name": "David Wilson",
-      "tagline": "Seasoned Project Manager",
-      "followers": 7200
+      "firstName": "Amit",
+      "lastName": "Choudhary",
+      "publicIdentifier": "amit-choudhary-baa919101",
+      "titleV2": "Amit Choudhary",
+      "textActionTarget": "https://www.linkedin.com/in/amit-choudhary-baa919101?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABnxUHIBORY0XCUxMh-F0fkumQ4sx9i0O40",
+      "subtitle": "Founder & CTO @Huzzle |  ex-CTO @Hundred | 10+ years experience in building products",
+      "subtitleV2": "Founder & CTO @Huzzle |  ex-CTO @Hundred | 10+ years experience in building products"
     }
   ],
 
-  "profile": [
-    {
-      "urn": "ACoAABu9To8BP8xR5-LAKUd_6hruTJpggQIXW48",
-      "username": "username",
-      "firstName": "Yogesh",
-      "lastName": "Kumar",
-      "isCreator": true,
-      "isOpenToWork": false,
-      "isHiring": false,
-      "profilePicture": "https://media.licdn.com/dms/image/D5603AQHHeiC4RfsaYA/profile-displayphoto-shrink_800_800/0/1668512713493?e=1724284800&v=beta&t=1yNjF6GZz3o53WKhQT473OX-ksct68wC4P4njltDKdI",
-      "summary": "Click the connect button and I'll jump on a quick call with you! Stay safe and have a great day.",
-      "headline": "Certified Salesforce Expert |\nSr. React Native Developer",
-      "geo": {
-        "country": "India",
-        "city": "New Delhi, Delhi",
-        "full": "New Delhi, Delhi, India"
+  "profile": {
+    "data": {
+      "firstName": "Ingmar",
+      "lastName": "Klein",
+      "fullName": "Ingmar Klein",
+      "publicIdentifier": "ingmar-klein",
+      "headline": "Founder & CEO of Huzzle | Helping people find fulfilling work | St. Gallen | Sigma² | Ewor",
+      "connections": 11657,
+      "followers": 22054,
+      "emailRequired": false,
+      "creatorWebsite": {
+        "name": "Find open entry-level jobs  ",
+        "link": "https://www.huzzle.app"
       },
-      "educations": [
+      "openConnection": true,
+      "urn": "ACoAACeIPPkBUymOGNvgfbBL_uhKc32Hg_g_haU",
+      "addressCountryOnly": "Germany",
+      "addressWithCountry": "Munich, Bavaria, Germany",
+      "addressWithoutCountry": "Munich, Bavaria",
+      "profilePic": "https://media.licdn.com/dms/image/v2/D4D03AQEdznqKNhDMNg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1712833623417?e=1729728000&v=beta&t=LDxairfo0o6PnxTWC7hM6ROtX-870fEh-b1f3kEa4mU",
+      "updates": [
         {
-          "start": {
-            "year": 0,
-            "month": 0,
-            "day": 0
-          },
-          "end": {
-            "year": 0,
-            "month": 0,
-            "day": 0
-          },
-          "fieldOfStudy": "Cloud Computing & Analytics",
-          "degree": "Master of Science - MS",
-          "grade": "3.58/4",
-          "schoolName": "Illinois Institute of Technology",
-          "description": "",
-          "activities": "",
-          "url": "https://www.linkedin.com/school/illinois-tech/",
-          "schoolId": 6328
+          "image": "https://media.licdn.com/dms/image/v2/D4D2DAQG45_sgWPvPTw/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1724099957975?e=1724976000&v=beta&t=2_YaSmGLRs5w6ZnZtNFyzf4silaX9If_bG1KYaXcRLs",
+          "postLink": "https://www.linkedin.com/feed/update/urn:li:activity:7226544743395053568",
+          "reactionTypeCounts": []
         },
         {
-          "start": {
-            "year": 0,
-            "month": 0,
-            "day": 0
-          },
-          "end": {
-            "year": 0,
-            "month": 0,
-            "day": 0
-          },
-          "fieldOfStudy": "Computer/Information Technology Administration and Management",
-          "degree": "Bachelor of Business Administration - BBA",
-          "grade": "A",
-          "schoolName": "Institute of Management Studies, Noida",
-          "description": "Accounting for Leaders, Managerial Finance, Marketing Strategies, Leadership & Change in Org, Operational Planning & Policy",
-          "activities": "",
-          "url": "https://www.linkedin.com/school/institute-of-management-studies-noida/",
-          "schoolId": 3259388
+          "postText": "\"There's really no hierarchy in TikTok.\" \n\nYaxin leads global Employer Branding for TikTok, and these are some quotes from our podcast episode together:\n\n→ \"You should give yourself more time after your bachelor’s degree.\"\n\n→ \"I’m not the type of person who would do hundreds of applications online... I just feel like sometimes there's this click between me and the company.\"\n\n→ \"TikTok still has a startup feeling to it.\"\n\n→ \"We accept mistakes, but we always want to learn form them and reiterate.\"\n\n🌟 Learn all about how the amazing Yaxin Xie moved from the glamorous PR world into Employer Branding, and how you can stand out in your application to TikTok! 🌟🕺💃\n\nLink is in the comments. Thanks for the conversation, Yaxin Xie!",
+          "image": "https://media.licdn.com/dms/image/v2/D4D22AQG7WFn57zSPLQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1722786692811?e=1727308800&v=beta&t=BDOUIr-Ilt0CVhb_2qhJ3rxmcCcdMBKIPYh7aLuAQwc",
+          "postLink": "https://www.linkedin.com/feed/update/urn:li:activity:7226127345571528705?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7226127345571528705%29",
+          "numLikes": 72,
+          "numComments": 6,
+          "reactionTypeCounts": [
+            {
+              "count": 59,
+              "reactionType": "LIKE"
+            },
+            {
+              "count": 6,
+              "reactionType": "PRAISE"
+            },
+            {
+              "count": 6,
+              "reactionType": "EMPATHY"
+            },
+            {
+              "count": 1,
+              "reactionType": "APPRECIATION"
+            }
+          ]
+        },
+        {
+          "postText": "we've been keeping this behind the curtains for a while now:\n\nI'm happy to share that we've raised a £1.43M pre-seed round from 10x Founders, and some amazing angels like Verena Pausder, Leon Szeli, Dr. Alexander Mrozek and more :)",
+          "image": "https://media.licdn.com/dms/image/v2/D4D22AQEtYfxNlsO8Jw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1713348471542?e=1727308800&v=beta&t=a2CMCY-fVeUkJnUKY-0d_1SgChu-zc-G7oq4rV2Or68",
+          "postLink": "https://www.linkedin.com/feed/update/urn:li:activity:7186304351869550592?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7186304351869550592%29",
+          "numLikes": 257,
+          "numComments": 65,
+          "reactionTypeCounts": [
+            {
+              "count": 176,
+              "reactionType": "LIKE"
+            },
+            {
+              "count": 62,
+              "reactionType": "PRAISE"
+            },
+            {
+              "count": 16,
+              "reactionType": "EMPATHY"
+            },
+            {
+              "count": 3,
+              "reactionType": "APPRECIATION"
+            }
+          ]
+        },
+        {
+          "postText": "Here's what I learnt interviewing Mark Crompton, the Global Head of Employment Marketing at Airbus:\n\n• Degree apprenticeships can be a powerful alternative to university (debt-free + job security + industry experience)\n• Airbus has been increasing their degree apprenticeship intake from 11 to 115 over the last 15 years, bringing in over 4,000 apprentices across programs\n• Airbus seems like a cool employer (Mark has been working there himself for over 17 years, so retention is lookin' good).\n\nIf you want to hear how Mark went from ditching his law studies to joining Airbus as an apprentice, along with some inside scoops about standing out in your application for Airbus, then tune in to the new episode of the The Graduate Guide by Huzzle.\n\nThanks again, Mark - it was a real pleasure!\n\noh, and shout-out to Handshake ;)",
+          "image": "https://media.licdn.com/dms/image/v2/D4D22AQEk35jrDBJe4w/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1713945168815?e=1727308800&v=beta&t=cB4-K1E_3hlKJfJnsihipj-9dkOHnXwBvJpqV6UwNm4",
+          "postLink": "https://www.linkedin.com/feed/update/urn:li:activity:7188807082463162368?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7188807082463162368%29",
+          "numLikes": 146,
+          "numComments": 8,
+          "reactionTypeCounts": [
+            {
+              "count": 129,
+              "reactionType": "LIKE"
+            },
+            {
+              "count": 12,
+              "reactionType": "PRAISE"
+            },
+            {
+              "count": 5,
+              "reactionType": "EMPATHY"
+            }
+          ]
+        },
+        {
+          "postText": "𝗟𝗶𝘀𝘁 𝗼𝗳 𝗔𝗽𝗿𝗶𝗹 𝟮𝟬𝟮𝟰 𝗴𝗿𝗮𝗱𝘂𝗮𝘁𝗲 𝗷𝗼𝗯𝘀 𝗶𝗻 𝗟𝗼𝗻𝗱𝗼𝗻 (𝗳𝗼𝗿 𝗨𝗞 𝘀𝘁𝘂𝗱𝗲𝗻𝘁𝘀 & 𝗴𝗿𝗮𝗱𝘀)!\n\nOver the past 3 weeks, we ran a script to compile a list of 1,000+ graduate jobs that are open in April.\n\nThe roles cover a range of industries (tech, finance, business, consulting, marketing, healthcare, engineering, etc.), and are all entry-level positions.\n\nWe'll be updating this list every day, and I'm happy to share it with anyone interested – please help share this post!\n\n𝗜𝗳 𝘆𝗼𝘂 𝘄𝗮𝗻𝘁 𝗮𝗰𝗰𝗲𝘀𝘀 𝘁𝗼 𝘁𝗵𝗲 𝘀𝗽𝗿𝗲𝗮𝗱𝘀𝗵𝗲𝗲𝘁, 𝗰𝗼𝗺𝗺𝗲𝗻𝘁 𝘆𝗼𝘂𝗿 𝗲𝗺𝗮𝗶𝗹 ⬇️ 𝗮𝗻𝗱 𝗜'𝗹𝗹 𝘀𝗲𝗻𝗱 𝘆𝗼𝘂 𝘁𝗵𝗲 𝗹𝗶𝗻𝗸!",
+          "image": "undefinedundefined",
+          "postLink": "https://www.linkedin.com/feed/update/urn:li:activity:7180836481278566401?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7180836481278566401%29",
+          "numLikes": 1115,
+          "numComments": 3667,
+          "reactionTypeCounts": [
+            {
+              "count": 1075,
+              "reactionType": "LIKE"
+            },
+            {
+              "count": 17,
+              "reactionType": "PRAISE"
+            },
+            {
+              "count": 11,
+              "reactionType": "INTEREST"
+            },
+            {
+              "count": 7,
+              "reactionType": "EMPATHY"
+            },
+            {
+              "count": 5,
+              "reactionType": "APPRECIATION"
+            }
+          ]
         }
       ],
-      "position": [
+      "about": "I believe the purpose in life is to make it better for others. passionate about tech x sociology.",
+      "experiences": [
         {
-          "companyName": "Upwork",
-          "companyUsername": "upwork",
-          "companyURL": "https://www.linkedin.com/company/upwork/",
-          "companyLogo": "https://media.licdn.com/dms/image/C4E0BAQFAvA55uI9RQQ/company-logo_400_400/0/1630655510176/upwork_logo?e=1727308800&v=beta&t=I9li7lTm-aYsmAt9AFBgRp160Oei0Bam1fEs7apg54Q",
-          "companyIndustry": "Computer Software",
-          "companyStaffCountRange": "501 - 1000",
-          "title": "Certified Salesforce Admin, Developer & Marketing Operations Manager",
-          "multiLocaleTitle": {
-            "en_US": "Certified Salesforce Admin, Developer & Marketing Operations Manager"
-          },
-          "multiLocaleCompanyName": {
-            "en_US": "Upwork"
-          },
-          "location": "United States",
-          "description": "✅Certified Salesforce Developer\n✅Certified Salesforce Administrator\n✅Certified Salesforce Marketing Cloud Specialist",
-          "employmentType": "Freelance",
-          "start": {
-            "year": 2022,
-            "month": 7,
-            "day": 0
-          },
-          "end": {
-            "year": 0,
-            "month": 0,
-            "day": 0
-          }
+          "companyId": "69513203",
+          "companyUrn": "urn:li:fsd_company:69513203",
+          "companyLink1": "https://www.linkedin.com/company/69513203/",
+          "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQGOAX7GpTUitg/company-logo_200_200/company-logo_200_200/0/1701600463061/huzzle_app_logo?e=1732147200&v=beta&t=ck5CKv3-dkkwkaOag8tzMcYXmZR2mY7jbyDS_XJmk1I",
+          "title": "Co-Founder & CEO",
+          "subtitle": "Huzzle 💚 · Full-time",
+          "caption": "Mar 2021 - Present · 3 yrs 6 mos",
+          "metadata": "London, Berlin, Munich",
+          "breakdown": false,
+          "subComponents": [
+            {
+              "description": [
+                {
+                  "type": "textComponent",
+                  "text": "• Early careers platform connecting students, societies & employers\n• Used by 100k+ students & 1,000+ societies / 250k+ applications generated to date\n• Mission: helping young people find jobs in which they become happy"
+                },
+                {
+                  "type": "mediaComponent",
+                  "text": "Huzzle secures €1.67 million pre-seed to help students land their dream graduate job | EU-Startups",
+                  "thumbnail": "https://media.licdn.com/dms/image/v2/D4D2DAQHFNtTSuqwYMg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1713887284036?e=1724976000&v=beta&t=vB0swZ97FVxwBEOZdmPkGsmGFIj-_RnR5UpI0hIK8l0"
+                }
+              ]
+            }
+          ]
         },
         {
-          "companyName": "CloudCache Consulting",
-          "companyUsername": "cloudcache-consulting",
-          "companyURL": "https://www.linkedin.com/company/cloudcache-consulting/",
-          "companyLogo": "https://media.licdn.com/dms/image/D560BAQHGRpM5onQ6_A/company-logo_400_400/0/1667019117410/cloudcache_consulting_logo?e=1727308800&v=beta&t=tcjURuvicawlM7obj9uipoyLN8n4D6HZMfg6Z9vVBLI",
-          "companyIndustry": "Information Technology & Services",
-          "companyStaffCountRange": "11 - 50",
-          "title": "Salesforce Admin & Developer",
-          "multiLocaleTitle": {
-            "en_US": "Salesforce Admin & Developer"
-          },
-          "multiLocaleCompanyName": {
-            "en_US": "CloudCache Consulting"
-          },
-          "location": "Bengaluru, Karnataka, India",
-          "description": "• Successfully migrated the business process from Microsoft CRM to Salesforce CRM.\n• Developing the new requirement on Salesforce as per business needs.\n• Analyzed business requirements, entity relationships and converting to Salesforce custom objects.\n• Maintaining the security level and configuration on Salesforce. \n• Implemented Apex Triggers for top-level standard objects such as Contacts, and Accounts.\n• Developed Visual Force pages to implement custom functionality. \n• Implemented various validation rules and workflows.\n• Worked on the Agile Scrum model aimed at adaptability and customer satisfaction.\n• Configured user security permissions in compliance with organizational needs to fulfill HIPAA rules.",
-          "employmentType": "Full-time",
-          "start": {
-            "year": 2019,
-            "month": 8,
-            "day": 0
-          },
-          "end": {
-            "year": 2022,
-            "month": 7,
-            "day": 0
-          }
+          "companyId": "89641077",
+          "companyUrn": "urn:li:fsd_company:89641077",
+          "companyLink1": "https://www.linkedin.com/company/89641077/",
+          "companyLink2": "https://www.linkedin.com/company/thegraduateguide/",
+          "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEOSpEeLw2ThQ/company-logo_200_200/company-logo_200_200/0/1696607169696?e=1732147200&v=beta&t=3S_H5rsSfTYxHKuh0Khb9F5AixoTUX4SDJ-Qs3OrOv0",
+          "title": "Co-Host",
+          "subtitle": "The Graduate Guide by Huzzle",
+          "caption": "Jan 2024 - Present · 8 mos",
+          "metadata": "London, England, United Kingdom",
+          "breakdown": false,
+          "subComponents": [
+            {
+              "description": [
+                {
+                  "type": "textComponent",
+                  "text": "• Interviewing people with unique / standout career journeys"
+                }
+              ]
+            }
+          ]
         },
         {
-          "companyName": "Citrusbug Technolabs",
-          "companyUsername": "citrusbug",
-          "companyURL": "https://www.linkedin.com/company/citrusbug/",
-          "companyLogo": "https://media.licdn.com/dms/image/C510BAQEVX6JUv4_U3w/company-logo_400_400/0/1630631870725/citrusbug_logo?e=1727308800&v=beta&t=Z_MeRHo3sTL21wSeWeTjACzTT0iwthB52OklO-1vDHM",
-          "companyIndustry": "Information Technology & Services",
-          "companyStaffCountRange": "51 - 200",
-          "title": "React Native Developer",
-          "multiLocaleTitle": {
-            "en_US": "React Native Developer"
-          },
-          "multiLocaleCompanyName": {
-            "en_US": "Citrusbug Technolabs"
-          },
-          "location": "Ahmedabad, Gujarat, India",
-          "description": "🚀Consider me if you need to:\n- Build iOS & Android Mobile app using React Native, Flutter, Redux, Expo, Firebase.\n- Build Rest Api using NodeJS + Firebase Admin SDK etc.\n- Build Server side rendered Web App using Node.js + React.js + Next.js + Angular.js + Vue.js + Koa.\n- Integrate GraphQL or Rest Api within Mobile App.\n- Integrate Firebase Auth (Email/Pass, Facebook, Google, Twitter).\n- Design Database using Cloud Fire Store, Realtime Database.\n- Integrate Stripe Payment Gateway.\n- Integrate Firebase Realtime Database for Chat App Implementation.\n- Location Tracking during different stages/modes of App.\n- Firebase Push Notification.\n- Upgrade React Native to Make App Live.\n\niOS App Development & Android App Development\n\nFront End: JavaScript (ES5 and ES6) | React | React-Native | Redux | React Hooks | React Saga | React Fetch | JSX | Sqlite | Realm\nBack End: Node.js | Express | MySQL | PostgreSQL | RESTful API Development | Firebase\nTesting/Deployment: Mocha | Chai | Jest | Artillery | Loader.io | Amazon AWS | Firebase | Docker\nDeveloper Tools: GitHub | npm | Webpack | Agile Methodology | TDD",
-          "employmentType": "Full-time",
-          "start": {
-            "year": 2018,
-            "month": 6,
-            "day": 0
-          },
-          "end": {
-            "year": 2019,
-            "month": 8,
-            "day": 0
-          }
+          "companyId": "29019213",
+          "companyUrn": "urn:li:fsd_company:29019213",
+          "companyLink1": "https://www.linkedin.com/company/29019213/",
+          "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEJgUWueJYdKQ/company-logo_200_200/company-logo_200_200/0/1719255547198/ewor_logo?e=1732147200&v=beta&t=mU9JnY10-CkYGnYpQkKuehG1O5u0rnkfgr0SIx3eWGY",
+          "title": "Venture Partner",
+          "subtitle": "EWOR",
+          "caption": "Jan 2023 - Present · 1 yr 8 mos",
+          "breakdown": false,
+          "subComponents": [
+            {
+              "description": [
+                {
+                  "type": "textComponent",
+                  "text": "• Scouting founders"
+                }
+              ]
+            }
+          ]
         },
         {
-          "companyName": "Clavax",
-          "companyUsername": "clavax",
-          "companyURL": "https://www.linkedin.com/company/clavax/",
-          "companyLogo": "https://media.licdn.com/dms/image/D560BAQE1HtTWPHZIyQ/company-logo_400_400/0/1703831321503/clavax_logo?e=1727308800&v=beta&t=L4mc1ElzzwCtvmqdeaQKh2wjTr2HIzW_ch1F1dY5P3I",
-          "companyIndustry": "Information Technology & Services",
-          "companyStaffCountRange": "201 - 500",
-          "title": "Senior Business Development Manager",
-          "multiLocaleTitle": {
-            "en_US": "Senior Business Development Manager"
-          },
-          "multiLocaleCompanyName": {
-            "en_US": "Clavax"
-          },
-          "location": "Gurugram, Haryana, India",
-          "description": "● Managing online bidding portals – Upwork, formerly Elance – oDesk, Freelancer, Guru, PeoplePerHour and AppFutura.\n● Identifying the specific needs of customers, and then creating bespoke solutions.\n● Responsible for driving business and sales growth by acquire new business opportunities through\ndifferent channels.\n● Responsible for converting the leads into business and ensuring monthly targets are\nachieved.",
-          "employmentType": "Full-time",
-          "start": {
-            "year": 2017,
-            "month": 4,
-            "day": 0
-          },
-          "end": {
-            "year": 2018,
-            "month": 6,
-            "day": 0
-          }
+          "companyId": "14821959",
+          "companyUrn": "urn:li:fsd_company:14821959",
+          "companyLink1": "https://www.linkedin.com/company/14821959/",
+          "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQEezK1Zj92j1A/company-logo_200_200/company-logo_200_200/0/1630560601644/kairos_society_europe_logo?e=1732147200&v=beta&t=YJLBpnHqeK1PxpM0Rmi-u8xHDswYJ8CPuDwm4sQ4H00",
+          "title": "Lead | Ed-Tech Horizontal",
+          "subtitle": "Sigma Squared Society",
+          "caption": "Nov 2022 - Present · 1 yr 10 mos",
+          "breakdown": false,
+          "subComponents": [
+            {
+              "description": [
+                {
+                  "type": "textComponent",
+                  "text": "• Bringing ed-tech founders together"
+                },
+                {
+                  "type": "mediaComponent",
+                  "text": "Workshop w/ GoStudent CPO Johann Jenson & Philipp Seybold",
+                  "thumbnail": "https://media.licdn.com/dms/image/sync/v2/D4E22AQFDlrVIN5WWYA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1701096991630?e=1727308800&v=beta&t=snhvNrO6wSy4fO_6PuE1_UlCziTb8JJNn97yWZIxExE"
+                }
+              ]
+            }
+          ]
         },
         {
-          "companyName": "Rapidsoft Technologies - Mobile & Web Application Development",
-          "companyUsername": "rapidsoft-technologies-pvt-ltd-",
-          "companyURL": "https://www.linkedin.com/company/rapidsoft-technologies-pvt-ltd-/",
-          "companyLogo": "https://media.licdn.com/dms/image/C510BAQGe1Qnkr8YzNg/company-logo_400_400/0/1631421027631/rapidsoft_technologies_pvt__ltd__logo?e=1727308800&v=beta&t=-IjMCypbv5drgVX84xn0YPmP94t6DaScCsafgAeQjUk",
-          "companyIndustry": "Information Technology & Services",
-          "companyStaffCountRange": "51 - 200",
-          "title": "Business Development Manager",
-          "multiLocaleTitle": {
-            "en_US": "Business Development Manager"
-          },
-          "multiLocaleCompanyName": {
-            "en_US": "Rapidsoft Technologies - Mobile & Web Application Development"
-          },
-          "location": "Gurugram, Haryana, India",
-          "description": "I was handling the responsibilities of maintaining steady stream of revenue for the\norganization by bringing new mobile based software development projects.\n\n● Managing the Pre-Sales team to ensure a sufficiently healthy leads pipeline and funnel.\n● Finding alternate source of business development including SEO & Pre-Sales Leads.\n● Generating Pre-Sales leads through Email Marketing.\n● Submitting online forms on online directories like Yelp, Entireweb, Viesearch, and Yellowpages.\n● Finding fresh data from Google and Yahoo for Email Marketing.\n● Advertising in social media networks for SEO leads.",
-          "employmentType": "Full-time",
-          "start": {
-            "year": 2015,
-            "month": 10,
-            "day": 0
-          },
-          "end": {
-            "year": 2017,
-            "month": 3,
-            "day": 0
-          }
+          "companyId": "11798380",
+          "companyUrn": "urn:li:fsd_company:11798380",
+          "companyLink1": "https://www.linkedin.com/company/11798380/",
+          "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQE1p3KCqPTf4g/company-logo_200_200/company-logo_200_200/0/1630531666000/young_digital_de_logo?e=1732147200&v=beta&t=kkLlMbMkeoDvUvXdJVCdF_Hb7FTBHHMXoWxYCdPQuvs",
+          "title": "Co-Founder & MD",
+          "subtitle": "Young & Digital · Full-time",
+          "caption": "Oct 2018 - Nov 2020 · 2 yrs 2 mos",
+          "metadata": "Munich, Vancouver, London",
+          "breakdown": false,
+          "subComponents": [
+            {
+              "description": [
+                {
+                  "type": "textComponent",
+                  "text": "• Consulting boutique for equity stories\n• Worked on IPO pre-marketing campaign & consulted Fortune 500 co's\n• Grew to 10 FTEs at peak\n→ Left to found Huzzle (wanted to build software vs. an agency)\n→ My co-founder Cole Alexander still runs Y&D"
+                },
+                {
+                  "type": "mediaComponent",
+                  "text": "Young & Digital | Vancouver | Antidote to indistinct messaging",
+                  "thumbnail": "https://media.licdn.com/dms/image/v2/D4D2DAQHtwMPHrdbvjg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1710506368442?e=1724976000&v=beta&t=oHYWUrfZyqhZzKp-CGTPDvYMqOD8c1SIQTRMCeCFi58"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "educations": [
+        {
+          "companyId": "166673",
+          "companyUrn": "urn:li:fsd_company:166673",
+          "companyLink1": "https://www.linkedin.com/company/166673/",
+          "logo": "https://media.licdn.com/dms/image/v2/C560BAQFwnhW-GPfiYw/company-logo_200_200/company-logo_200_200/0/1630655380576/university_of_st_gallen_logo?e=1732147200&v=beta&t=i80qlARYsMuMFOjiJeMu67mOeCuwurdfAPlZfUEKO38",
+          "title": "University of St.Gallen",
+          "subtitle": "Bachelor of Arts - BA, Leadership, HR, Business Management",
+          "breakdown": false,
+          "subComponents": [
+            {
+              "description": [
+                {
+                  "type": "insightComponent",
+                  "text": "Activities and societies: Rugby at the Silverbacks, Member of the Board at the Private Equity and Venture Capital Club"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "companyId": "22614",
+          "companyUrn": "urn:li:fsd_company:22614",
+          "companyLink1": "https://www.linkedin.com/company/22614/",
+          "logo": "https://media.licdn.com/dms/image/v2/C4E0BAQH1trVeMU7kyA/company-logo_200_200/company-logo_200_200/0/1631325578760?e=1732147200&v=beta&t=t_HDw-_9_4ENTKJyYY_qyYJuaEAMU0g-rfE02JA0v1c",
+          "title": "International Baccalaureate",
+          "subtitle": "IB Diploma",
+          "breakdown": false,
+          "subComponents": [
+            {
+              "description": []
+            }
+          ]
+        }
+      ],
+      "licenseAndCertificates": [
+        {
+          "companyId": "7119962",
+          "companyUrn": "urn:li:fsd_company:7119962",
+          "companyLink1": "https://www.linkedin.com/company/7119962/",
+          "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQGXkB3gsAXhvQ/company-logo_200_200/company-logo_200_200/0/1630557839051/deutscher_skiverband_logo?e=1732147200&v=beta&t=S90CJMWJvb_iaqgljRgIEvKaF81mIvLEo7JMutOvxs4",
+          "title": "Ski Instructor Level 1",
+          "subtitle": "Deutscher Skiverband",
+          "caption": "Issued Jan 2017",
+          "breakdown": false,
+          "subComponents": [
+            {
+              "description": []
+            }
+          ]
+        }
+      ],
+      "honorsAndAwards": [
+        {
+          "title": "🥈 Generation-D Start-Up Competition ",
+          "subtitle": "Issued by Generation-D · Jul 2019",
+          "breakdown": false,
+          "subComponents": [
+            {
+              "description": [
+                {
+                  "type": "textComponent",
+                  "text": "• 2nd place, 5K grant\n• https://www.munich-startup.de/51039/wastebuddy-gewinnt-bei-generation-d/\n• https://www.basicthinking.de/blog/2019/08/21/waste-buddy-biomuell-start-up-check/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "McKinsey Firsthand Program",
+          "subtitle": "Issued by McKinsey & Company",
+          "breakdown": false,
+          "subComponents": [
+            {
+              "description": [
+                {
+                  "type": "insightComponent",
+                  "text": "Associated with Nymphenburger Gymnasium"
+                },
+                {
+                  "type": "textComponent",
+                  "text": "One of youngest members (at 16)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "languages": [
+        {
+          "title": "Deutsch",
+          "caption": "Native or bilingual proficiency",
+          "breakdown": false,
+          "subComponents": [
+            {
+              "description": []
+            }
+          ]
+        },
+        {
+          "title": "Englisch",
+          "caption": "Full professional proficiency",
+          "breakdown": false,
+          "subComponents": [
+            {
+              "description": []
+            }
+          ]
+        }
+      ],
+      "volunteerAndAwards": [
+        {
+          "companyId": "9996465",
+          "companyUrn": "urn:li:fsd_company:9996465",
+          "companyLink1": "https://www.linkedin.com/company/9996465/",
+          "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQF_U20E93wwJQ/company-logo_200_200/company-logo_200_200/0/1695924729331?e=1732147200&v=beta&t=hsJWlZ92HuaQ1VMHRCOAYyNvJuPDAYv_j95-5q-Yibk",
+          "title": "Head of Marketing",
+          "subtitle": "PEVC Club at the University of St.Gallen",
+          "caption": "Sep 2019 - Jul 2020 · 11 mos",
+          "breakdown": false,
+          "subComponents": [
+            {
+              "description": []
+            }
+          ]
+        },
+        {
+          "companyId": "11798380",
+          "companyUrn": "urn:li:fsd_company:11798380",
+          "companyLink1": "https://www.linkedin.com/company/11798380/",
+          "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQE1p3KCqPTf4g/company-logo_200_200/company-logo_200_200/0/1630531666000/young_digital_de_logo?e=1732147200&v=beta&t=kkLlMbMkeoDvUvXdJVCdF_Hb7FTBHHMXoWxYCdPQuvs",
+          "title": "Helping SMEs that got hit by COVID",
+          "subtitle": "Young & Digital",
+          "caption": "Mar 2020 - Oct 2020 · 8 mos",
+          "metadata": "Economic Empowerment",
+          "breakdown": false,
+          "subComponents": [
+            {
+              "description": []
+            }
+          ]
+        }
+      ],
+      "verifications": [],
+      "promos": [],
+      "highlights": [],
+      "projects": [],
+      "publications": [],
+      "patents": [],
+      "courses": [],
+      "testScores": [],
+      "organizations": [
+        {
+          "title": "Link Community",
+          "subtitle": "Member",
+          "breakdown": false,
+          "subComponents": [
+            {
+              "description": []
+            }
+          ]
+        },
+        {
+          "title": "Sigma Squared Community",
+          "subtitle": "Member",
+          "breakdown": false,
+          "subComponents": [
+            {
+              "description": []
+            }
+          ]
+        }
+      ],
+      "volunteerCauses": [],
+      "interests": [
+        {
+          "section_name": "Top Voices",
+          "section_components": [
+            {
+              "titleV2": "Anna Alex",
+              "caption": "56,363 followers",
+              "subtitle": "Entrepreneur & Investor with Focus on Sustainability, Biodiversity and Nature | Co-Founder Nala Earth / Planetly / Outfittery | SPIEGEL Bestselling Author ",
+              "size": "LARGE",
+              "textActionTarget": "https://www.linkedin.com/in/anna-alex",
+              "subComponents": []
+            },
+            {
+              "titleV2": "Verena Pausder",
+              "caption": "175,769 followers",
+              "subtitle": "Chairwoman of the Board of the German Startup Association | Co-Founder FC Viktoria Berlin I Podcast-Host \"Fast & Curious\"",
+              "size": "LARGE",
+              "textActionTarget": "https://www.linkedin.com/in/verenapausder",
+              "subComponents": []
+            }
+          ]
+        },
+        {
+          "section_name": "Companies",
+          "section_components": [
+            {
+              "titleV2": "Harvard Business Review",
+              "caption": "14,439,943 followers",
+              "size": "LARGE",
+              "textActionTarget": "https://www.linkedin.com/company/1649/",
+              "subComponents": []
+            },
+            {
+              "titleV2": "Ogilvy",
+              "caption": "1,620,502 followers",
+              "size": "LARGE",
+              "textActionTarget": "https://www.linkedin.com/company/1673/",
+              "subComponents": []
+            }
+          ]
+        },
+        {
+          "section_name": "Newsletters",
+          "section_components": [
+            {
+              "titleV2": "HRTech Transactions M&A Europe",
+              "caption": "Published monthly",
+              "subtitle": "Monthly overview of European HRTech M&A transactions",
+              "size": "LARGE",
+              "textActionTarget": "https://www.linkedin.com/newsletters/7226888225003294720",
+              "subComponents": [
+                {
+                  "insightComponent": {
+                    "text": "Jens Bender",
+                    "actionTarget": "https://www.linkedin.com/in/jens-bender"
+                  }
+                }
+              ]
+            },
+            {
+              "titleV2": "Equal Pay",
+              "caption": "Published biweekly",
+              "subtitle": "Everything you need to know about the EU Pay Transparency Directive",
+              "size": "LARGE",
+              "textActionTarget": "https://www.linkedin.com/newsletters/7160571794272215040",
+              "subComponents": [
+                {
+                  "insightComponent": {
+                    "text": "Anita Lettink",
+                    "actionTarget": "https://www.linkedin.com/in/anitalettink"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "section_name": "Schools",
+          "section_components": [
+            {
+              "titleV2": "Y Combinator",
+              "caption": "966,193 followers",
+              "size": "LARGE",
+              "textActionTarget": "https://www.linkedin.com/school/167872/",
+              "subComponents": []
+            },
+            {
+              "titleV2": "Hyphen",
+              "caption": "3,023 followers",
+              "size": "LARGE",
+              "textActionTarget": "https://www.linkedin.com/school/69405543/",
+              "subComponents": []
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        {
+          "section_name": "Received",
+          "section_components": []
+        },
+        {
+          "section_name": "Given",
+          "section_components": [
+            {
+              "titleV2": "Saisha Chopra",
+              "caption": "December 8, 2023, Ingmar managed Saisha directly",
+              "subtitle": "Business Administration (B&I)| Ex-Marketing @Lenskart.com | Aspiring Actuary",
+              "size": "LARGE",
+              "textActionTarget": "https://www.linkedin.com/in/saishachopra05",
+              "image": "https://media.licdn.com/dms/image/v2/D5603AQEFUnuw28Xl9w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1713702981730?e=1729728000&v=beta&t=wrEHPNqiOLREEqG5Q6bfJ_Xc7h7BluJPmMfhzXBnn4Y",
+              "subComponents": [
+                {
+                  "fixedListComponent": [
+                    {
+                      "type": "textComponent",
+                      "text": "Very quick communicator, professional, and reliable."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "titleV2": "Deborah Dada",
+              "caption": "January 30, 2022, Ingmar managed Deborah directly",
+              "subtitle": "Product Designer || UK Global Talent || Panel Moderator",
+              "size": "LARGE",
+              "textActionTarget": "https://www.linkedin.com/in/deborah-dada-9aaa11134",
+              "image": "https://media.licdn.com/dms/image/v2/C4D03AQGfjc23gPDwsA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1661326634700?e=1729728000&v=beta&t=jzzHODQVZzJFO4Ss1UNbHPAnxFjcpLhe7EcwWgZig88",
+              "subComponents": [
+                {
+                  "fixedListComponent": [
+                    {
+                      "type": "textComponent",
+                      "text": "Here's what stands out about Debby: \n- One of the strongest communicators I've worked with\n- Very professional & of high-integrity\n- A natural leader\nIn the future, I see her on a big stage, talking about Product & UX."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "skills": [
         {
-          "name": "Business Development",
-          "passedSkillAssessment": false
+          "title": "Entrepreneurship",
+          "subComponents": [
+            {
+              "description": [
+                {
+                  "type": "insightComponent",
+                  "text": "Endorsed by 1 person in the last 6 months"
+                },
+                {
+                  "type": "insightComponent",
+                  "text": "1 endorsement"
+                }
+              ]
+            }
+          ]
         },
         {
-          "name": "Business Strategy",
-          "passedSkillAssessment": false
+          "title": "Leadership",
+          "subComponents": [
+            {
+              "description": [
+                {
+                  "type": "insightComponent",
+                  "text": "Endorsed by 2 people in the last 6 months"
+                },
+                {
+                  "type": "insightComponent",
+                  "text": "15 endorsements"
+                }
+              ]
+            }
+          ]
         },
         {
-          "name": "Customer Satisfaction",
-          "passedSkillAssessment": false
+          "title": "Public Speaking",
+          "subComponents": [
+            {
+              "description": [
+                {
+                  "type": "insightComponent",
+                  "text": "Endorsed by 1 person in the last 6 months"
+                },
+                {
+                  "type": "insightComponent",
+                  "text": "15 endorsements"
+                }
+              ]
+            }
+          ]
         },
         {
-          "name": "Customer Relationship Management (CRM)",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 76
+          "title": "Digital Marketing",
+          "subComponents": [
+            {
+              "description": [
+                {
+                  "type": "insightComponent",
+                  "text": "24 endorsements"
+                }
+              ]
+            }
+          ]
         },
         {
-          "name": "Salesforce.com",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 33
+          "title": "Social Media Marketing",
+          "subComponents": [
+            {
+              "description": [
+                {
+                  "type": "insightComponent",
+                  "text": "17 endorsements"
+                }
+              ]
+            }
+          ]
         },
         {
-          "name": "New Business Development",
-          "passedSkillAssessment": false
+          "title": "Startup Marketing",
+          "subComponents": [
+            {
+              "description": [
+                {
+                  "type": "insightComponent",
+                  "text": "8 endorsements"
+                }
+              ]
+            }
+          ]
         },
         {
-          "name": "Project Management",
-          "passedSkillAssessment": false
+          "title": "Equity Stories",
+          "subComponents": [
+            {
+              "description": [
+                {
+                  "type": "insightComponent",
+                  "text": "3 endorsements"
+                }
+              ]
+            }
+          ]
         },
         {
-          "name": "Team Management",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 93
+          "title": "Consulting",
+          "subComponents": [
+            {
+              "description": [
+                {
+                  "type": "insightComponent",
+                  "text": "3 endorsements"
+                }
+              ]
+            }
+          ]
         },
         {
-          "name": "Sales Management",
-          "passedSkillAssessment": false
-        },
-        {
-          "name": "CRM",
-          "passedSkillAssessment": false
-        },
-        {
-          "name": "Lead Generation",
-          "passedSkillAssessment": false
-        },
-        {
-          "name": "Management",
-          "passedSkillAssessment": false
-        },
-        {
-          "name": "Project Planning",
-          "passedSkillAssessment": false
-        },
-        {
-          "name": "Digital Marketing",
-          "passedSkillAssessment": false
-        },
-        {
-          "name": "Mobile Application Development",
-          "passedSkillAssessment": false
-        },
-        {
-          "name": "E-commerce",
-          "passedSkillAssessment": false
-        },
-        {
-          "name": "Website Development",
-          "passedSkillAssessment": false
-        },
-        {
-          "name": "Leadership",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 98
-        },
-        {
-          "name": "Business Analysis",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 92
-        },
-        {
-          "name": "Sales",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 92
-        },
-        {
-          "name": "Business Planning",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 90
-        },
-        {
-          "name": "Pre-sales",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 90
-        },
-        {
-          "name": "Bespoke Website Design",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 82
-        },
-        {
-          "name": "Sales Process",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 86
-        },
-        {
-          "name": "Cold Calling",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 68
-        },
-        {
-          "name": "Entrepreneurship",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 69
-        },
-        {
-          "name": "Start-ups",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 64
-        },
-        {
-          "name": "Customer Service",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 66
-        },
-        {
-          "name": "Operations Management",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 63
-        },
-        {
-          "name": "Requirements Gathering",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 60
-        },
-        {
-          "name": "Market Research",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 57
-        },
-        {
-          "name": "Strategic Planning",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 54
-        },
-        {
-          "name": "Project Delivery",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 56
-        },
-        {
-          "name": "Project Estimation",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 55
-        },
-        {
-          "name": "Web Applications",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 54
-        },
-        {
-          "name": "Advertising",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 54
-        },
-        {
-          "name": "Enterprise Resource Planning (ERP)",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 53
-        },
-        {
-          "name": "Software Development",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 50
-        },
-        {
-          "name": "Project Coordination",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 52
-        },
-        {
-          "name": "Mobile Technology",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 52
-        },
-        {
-          "name": "User Interface Design",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 50
-        },
-        {
-          "name": "Negotiation",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 50
-        },
-        {
-          "name": "Public Relations",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 50
-        },
-        {
-          "name": "Business Requirements",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 49
-        },
-        {
-          "name": "Requirements Analysis",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 50
-        },
-        {
-          "name": "Product Development",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 47
-        },
-        {
-          "name": "Problem Solving",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 46
-        },
-        {
-          "name": "Testing",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 48
-        },
-        {
-          "name": "Software as a Service (SaaS)",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 30
-        },
-        {
-          "name": "Cloud Computing",
-          "passedSkillAssessment": false,
-          "endorsementsCount": 32
+          "title": "Strategy",
+          "subComponents": [
+            {
+              "description": [
+                {
+                  "type": "insightComponent",
+                  "text": "3 endorsements"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
-  ]
-
+  }
 }
