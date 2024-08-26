@@ -1,4 +1,11 @@
 <div class="login-container">
+    <div class="logo">
+        Linked
+        <img
+            alt="logo"
+            [src]="logoIcon"
+        />
+    </div>
     <div class="left-side">
         <h1>Connect with the most incredible professionals&#33;</h1>
     </div>
@@ -8,7 +15,8 @@
             (ngSubmit)="onSubmit()"
             class="signup-form"
         >
-            <h1 class="form-title">Login</h1>
+            <h1 class="form-title">Sign in</h1>
+            <p class="form-subtitle">Stay updated on your professional word.</p>
             <div class="username">
                 <label for="email">Email</label>
                 <input
@@ -42,7 +50,7 @@
                 type="submit"
                 [disabled]="!loginForm.valid"
             >
-                Login <mat-icon>arrow_forward</mat-icon>
+                Sign in <mat-icon>arrow_forward</mat-icon>
             </button>
             <div class="register-acc">Don&#39;t have an account? <a routerLink="/register">Register</a></div>
         </form>

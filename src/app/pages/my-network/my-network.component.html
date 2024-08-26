@@ -1,0 +1,16 @@
+<button
+    class="back-btn"
+    (click)="navigateBack()"
+    matTooltip="Go back"
+>
+    <mat-icon>arrow_back_ios</mat-icon>
+</button>
+<div class="profile-grid">
+    <div
+        *ngFor="let item of items"
+        class="profile-card"
+    >
+        <h2 class="profile-name">{{ item.titleV2 }}</h2>
+        <p class="profile-tagline">{{ item.subtitle }}</p>
+    </div>
+</div>

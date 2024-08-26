@@ -1,0 +1,34 @@
+<nav class="navbar">
+    <div class="navbar-brand">
+        <img
+            [src]="logoImage"
+            alt="logo"
+            fill
+        />
+        <input type="text" placeholder="Search" >
+    </div>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <mat-icon>home</mat-icon>
+            <a href="/home">Home</a>
+        </li>
+
+        <li class="nav-item">
+            <mat-icon>group</mat-icon>
+            <a routerLink="/my-network">My Network</a>
+        </li>
+        <li class="nav-item">
+            <mat-icon>manage_accounts</mat-icon>
+            <a href="/profile-settings">Profile</a>
+        </li>
+    </ul>
+    <div
+        type="button"
+        class="logout-btn"
+        (click)="logoutUser()"
+        onkeypress="logoutUser()"
+    >
+        <mat-icon>logout</mat-icon>
+        Logout
+    </div>
+</nav>

@@ -1,0 +1,13 @@
+<div
+    *ngIf="items"
+    class="profile-card"
+>
+    <img
+        [src]="items.profilePic"
+        alt="profile"
+        class="profile-picture"
+    />
+    <h2 class="profile-name">{{ items.fullName }}</h2>
+    <p class="profile-country">{{items.addressWithCountry }}</p>
+    <p class="profile-headline">{{ items.headline }}</p>
+</div>
