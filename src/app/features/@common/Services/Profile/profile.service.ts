@@ -9,7 +9,6 @@ import { ProfileDataResponse } from '../../../../interfaces/profile.model';
 })
 export class ProfileService {
     constructor(private http: HttpClient) {}
-    private mockServerApi: string = environment.mockServerApi;
     private _rapidApi: string = environment.rapidApiUrl;
 
     getUserProfile(): Observable<ProfileDataResponse> {
@@ -18,6 +17,6 @@ export class ProfileService {
     }
 
     getMockUserProfile(): Observable<ProfileDataResponse> {
-        return this.http.get<ProfileDataResponse>(`${this.mockServerApi}/profile`);
+        return this.http.get<ProfileDataResponse>(`${environment}/profile`);
     }
 }

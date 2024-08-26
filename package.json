@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve &&  ts-node node.js",
-    "build": "ng build",
+    "build": "npm run config && ng build",
+    "config": "ts-node src/environments/node.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -24,6 +25,7 @@
     "jwt-decode": "^4.0.0",
     "ng-angular-popup": "^0.6.2",
     "rxjs": "~7.8.0",
+    "ts-node": "^10.9.2",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
   },

@@ -14,7 +14,6 @@ export class FeedService {
     private _rapidApi: string = environment.rapidApiUrl;
     private _link: string = environment.base_link;
     private _page: number = 1;
-    private mockServerApi: string = environment.mockServerApi;
 
     getFeed(): Observable<PostResponse> {
         const params = new HttpParams()
@@ -24,7 +23,7 @@ export class FeedService {
     }
 
     getMockFeed(): Observable<Post[]> {
-        return this.http.get<Post[]>(`${this.mockServerApi}/posts`);
+        return this.http.get<Post[]>(`${environment}/posts`);
     }
 
     getSimilarProfile(): Observable<SimilarProfileResponse> {
@@ -33,6 +32,6 @@ export class FeedService {
     }
 
     getSimilarProfileMock(): Observable<SimilarProfile[]> {
-        return this.http.get<SimilarProfile[]>(this.mockServerApi + '/response');
+        return this.http.get<SimilarProfile[]>(environment + '/response');
     }
 }
