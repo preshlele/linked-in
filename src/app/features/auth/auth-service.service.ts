@@ -1,5 +1,5 @@
 import { inject, Injectable, signal } from '@angular/core';
-import { environment } from '../../../../environments/environment';
+import { environment } from '../../../environments/environment';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { LoginData, LoginDataResponse, RegisterData, RegisterDataResponse, User } from '../../interfaces/model';
 import { finalize, map, Observable, tap } from 'rxjs';
