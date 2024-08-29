@@ -19,7 +19,6 @@ export const cachingInterceptor: HttpInterceptorFn = (
 
     return next(req).pipe(
         map<HttpEvent<unknown>, HttpEvent<unknown>>((event) => {
-            console.log('caching');
             if (event instanceof HttpResponse) {
                 _cache.set(req.urlWithParams, event);
             }

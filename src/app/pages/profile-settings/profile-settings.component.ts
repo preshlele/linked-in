@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ProfileService } from '../../features/@common/Services/Profile/profile.service';
 import { Location } from '@angular/common';
 import { ProfileData } from '../../interfaces/profile.model';
+import { map, Observable } from 'rxjs';
 
 @Component({
     selector: 'app-profile-settings',
@@ -14,12 +15,12 @@ export class ProfileSettingsComponent {
         private _location: Location,
     ) {}
     mockProfileData: ProfileData = {} as ProfileData;
-    item: ProfileData = {} as ProfileData;
+    profile$: Observable<ProfileData> = new Observable<ProfileData>();
 
     ngAfterViewInit(): void {
-        this._profileService.getUserProfile().subscribe((data) => {
-            this.item = data.data;
-        });
+        this.profile$ = this._profileService.getUserProfile().pipe(
+            map((res) => res.data),
+        )
     }
 
     navigateBack() {
