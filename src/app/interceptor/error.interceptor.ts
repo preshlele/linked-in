@@ -14,7 +14,6 @@ export const errorInterceptor: HttpInterceptorFn = (
             if (err.status === 401 || err.status === 403 || err.status === 400 || err.status === 500) {
                 _toast.danger(err.error.error || err.error.message|| err.error.error, ' Please try again.', 5000);
             } else {
-                console.log('second');
                 _toast.danger('An unexpected error occurred.', 'ERROR', 5000);
             }
             return throwError(() => err); // Ensure the error is re-thrown
