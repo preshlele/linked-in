@@ -25,6 +25,11 @@ import { refreshInterceptor } from './interceptor/refresh.interceptor';
 import { ProfileSettingsComponent } from './pages/profile-settings/profile-settings.component';
 import { rapidApiInterceptor } from './interceptor/rapid-api.interceptor';
 import { errorInterceptor } from './interceptor/error.interceptor';
+import { SpinnerComponent } from './components/spinner/spinner.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { loadingInterceptor } from './interceptor/loading.interceptor';
+import { cachingInterceptor } from './interceptor/caching.interceptor';
+
 
 @NgModule({
     declarations: [
@@ -39,9 +44,10 @@ import { errorInterceptor } from './interceptor/error.interceptor';
         AnalyticsComponent,
         MyNetworkComponent,
         ProfileSettingsComponent,
+        SpinnerComponent,
     ],
-    imports: [BrowserModule, AppRoutingModule, MatIconModule, MatCardModule, ReactiveFormsModule, MatFormFieldModule, MatIconModule, NgToastModule],
-    providers: [provideAnimationsAsync(), provideHttpClient(withInterceptors([authInterceptor, rapidApiInterceptor, refreshInterceptor, errorInterceptor]))],
+    imports: [BrowserModule, AppRoutingModule, MatIconModule, MatCardModule, ReactiveFormsModule, MatFormFieldModule, MatIconModule, NgToastModule, MatProgressSpinnerModule],
+    providers: [provideAnimationsAsync(), provideHttpClient(withInterceptors([authInterceptor, rapidApiInterceptor, refreshInterceptor, errorInterceptor, loadingInterceptor, cachingInterceptor]))],
     bootstrap: [AppComponent],
 })
 export class AppModule {}
